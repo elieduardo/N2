@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <locale.h>
 #include <windows.h>
-#define MAX 30
+#define MAX 10
 #include "letreiro.h"
 
 int main(){
@@ -38,6 +38,7 @@ int main(){
 		if (enfileira(&fila, letra)){
 			printf("\nLetra %c incluida!", letra);
 			printf("\n---------------------------------------------");
+			Sleep(500);
 		}else{
 			printf("\nFila cheia!");
 		}
